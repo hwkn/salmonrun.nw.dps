@@ -1,0 +1,79 @@
+,Weapon,Param Name,DMG,Falloff (Min),Weak (Max),Weak (Min),Indirect DMG,Horizontal Attack,Vertical Attack,Contact DMG,Partial Charge,Tapshot,Notes,Range,Weight,Speed while Firing,Shot Interval Frame Data,Interval (DPS calculation),,Roll,Firing type,,DPS,DPS 2,DPS (+charge),,Total Damage,,,Ink Consumption,,,Shots per Inktank,,Continuous DPS,,IR Frames,IR 2,IR Special,Time tank lasts,
+Shooters,Sploosh-o-Matic,ShooterShort,45,30,,,,,,,,,,16,light,0.080 u/f,5F,5,,,,,540,,,,"5,625",,,0.8%,,,125 shots,,412,,15,,,10.42s,
+,Splattershot Jr,ShooterFirst,28,20,,,,,,,,,,23,light,0.076 u/f,5F,5,,,,,336,,,,"6,496",,,0.43%,,,232 shots,,288,,15,,,19.33s,
+,Splash-o-Matic,ShooterPrecision,28,20,,,,,,,,,,24,light,0.072 u/f,5F,5,,,,,336,,,,"3,500",,,0.8%,,,125 shots,,255,,20,,,10.42s,
+,Aerospray MG,ShooterBlaze,24,19,,,,,,,,,,23,light,0.072 u/f,4F,4,,,,,360,,,,"4,800",,,0.5%,,,200 shots,,289,,15,,,13.33s,
+,Splattershot,ShooterNormal,36,30,,,,,,,,,,26,middle,0.072 u/f,6F,6,,,,,360,,,,"3,888",,,0.92%,,,108 shots,,275,,20,,,10.80s,
+,.52 Gal,ShooterGravity,52,35,,,,,,,,,,28,middle,0.060 u/f,9F,9,,,,,347,,,,"3,952",,,1.3%,,,76 shots,,269,,20,,,11.40s,
+,N-ZAP '85,ShooterQuickMiddle,30,20,,,,,,,,,,26,light,0.084 u/f,5F,5,,,,,360,,,,"3,750",,,0.8%,,,125 shots,,273,,20,,,10.42s,
+,Splattershot Nova,ShooterQuickLong,30,20,,,,,,,,,,32,middle,0.079 u/f,6F,6,,,,,300,,,,"3,750",,,0.8%,,,125 shots,,237,,20,,,12.50s,
+,Splattershot Pro,ShooterExpert,45,30,,,,,,,,,,35,middle,0.055 u/f,8F,8,,,,,338,,,,"2,790",,,1.6%,,,62 shots,,241,,20,,,8.27s,
+,.96 Gal,ShooterHeavy,85,55,,,,,,,,,,37,middle,,12F,12,,,,,425,,,,"3,400",,,2.5%,,,40 shots,,300,,20,,,8.00s,
+,Jet Squelcher,ShooterLong,40,30,,,,,,,,,,46,middle,,8F,8,,,,,300,,,,"2,480",,,1.6%,,,62 shots,,214,,20,,,8.27s,
+Blasters,Luna Blaster,BlasterShort,200,,,,100~140,,,,,,,16(23),light,,40F,40,,,,,300,,,,"5,000",,,4.0%,,,25 shots,,243,,55,,,16.67s,
+,Blaster,BlasterMiddle,200,,,,100~140,,,,,,,21(27),middle,,50F,50,,,,,240,,,,"4,000",,,4.8%,,,20 shots,,195,,60,,,16.67s,
+,Range Blaster,BlasterLong,250,,,,150,,,,,,,28(34),middle,,60F,60,,,,,250,,,,"5,000",,,5.0%,,,20 shots,,207,,70,,,20.00s,
+,Clash Blaster,BlasterLightShort,85,,,,50,,,,,,,19(26),light,,20F,20,,,,,255,,,,"2,635",,,3.2%,,,31 shots,,189,,40,,,10.33s,
+,Rapid Blaster,BlasterLight,140,,,,60,,,,,,,31(37),middle,,35F,35,,,,,240,,,,"3,080",,,4.5%,,,22 shots,,185,,50,,,12.83s,
+,Rapid Blaster Pro,BlasterLightLong,150,,,,75,,,,,,,36(42),middle,,40F,40,,,,,225,,,,"3,000",,,5.0%,,,20 shots,,175,,50,,,13.33s,
+,S-BLAST '92,BlasterPrecision,300,,,,150,,,,,,,30(32) / 16(24),middle,0.040 u/f,60F,60,,,,,300,,,,"3,300",,,8.5%,,,11 shots,,,,,,,11.00s,
+Semi-autos (Tap Shooters),L-3 Nozzlenose,ShooterTripleQuick,40,35,,,,,,,,,"3 shots per trigger press, 120 dmg total",31,middle,,4F*3 + 6F endlag,18,,,,,400,,,,"1,320",,,1.0%,,,33 bursts,100 bullets,298,,25,,,9.90s,*
+,H-3 Nozzlenose,ShooterTripleMiddle,70,60,,,,,,,,,"3 shots per trigger press, 210 dmg total",35,middle,,5F*3 + 17F endlag,32,,,,,394,,,,"1,260",,,1.8%,,,18 bursts,55 bullets,292,,25,,,9.60s,*
+,Squeezer,ShooterFlash,50,40,34,30,,,,,,,"Weak bullet is 34-30 dmg. continuous DPS is 242 for tapshot, 235 for hold",41→26,middle,,(8F tap / 7F hold),8,7,,tap / hold,,375,291,,,"2,250","3,722",,2.2%,0.9%,,45 tapshots,109 shots,242,,20,,,6.00s,*
+Rollers,Carbon Roller,RollerCompact,160,80,,,,160,160,70,,,Min 30 dmg for horizontal falloff,18 / 27,light,,31F / 42F,31,42,8,horizontal / vertical,,310,229,,,"4,480","4,480",,3.5%,,,28 flicks,,248,,40,45,20,14.47s,
+,Big Swig Roller,RollerWide,160,80,150,50,,150,160,70,,,,20 / 40,middle,,39F / 50F,39,50,8,horizontal / vertical,,231,192,,,"1,800","1,920",,8%,,,12 flicks,,157,,45,50,20,7.80s,
+,Splat Roller,RollerNormal,200,100,,,,200,200,125,,,Min 35 dmg for horizontal falloff,25 / 32,middle,,42F / 56F,42,56,8,horizontal / vertical,,286,214,,,"3,200","3,200",,6%,,,16 flicks,,216,,45,60,20,11.20s,
+,Dynamo Roller,RollerHeavy,300,150,200,100,,200,300,400,,,"Min 50 dmg for horizontal falloff, with low ink max 150 vertical / 100 horizontal",36 / 48,heavy,,66F / 85F,66,85,8,horizontal / vertical,,182,212,,,"1,000","1,500",,20%,,0.15,5 flicks,,134,,65,80,20,5.50s,
+,Flingza Roller,RollerHunter,300,150,200,100,,200,300,125,,,"Min 50 dmg for horizontal falloff, with low ink max 150 vertical",21 / 41,middle,,40F / 72F,40,72,8,horizontal / vertical,,300,250,,,"3,200","2,400",,6%,12%,0.1,16 hflicks,8 vflicks,224,,45,70,20,10.67s,
+Brushes,Inkbrush,BrushMini,36,13,,,,,,40,,,,16,light,,6F (1F startup),6,1,8,,,360,,,,"2,376",,,1.5%,,,66 flicks,,235,,30,,20,6.60s,
+,Octobrush,BrushNormal,60,24,,,,,,40,,,lowest falloff dmg confirmed to 24.7,20,middle,,10F (1F startup),10,1,8,,,360,,,,"1,860",,,3.2%,,,31 flicks,,215,,30,,20,5.17s,
+,Painbrush,BrushHeavy,150,38,,,,,,50,,,"swinging level, 150 dmg (at range 10) ~ 80 dmg (at range 25). lowest falloff dmg: 42.8",25,middle,0.180 u/f,15F (23F startup),15,23,8,,,600,,,,"3,000",,,4.8%,,,20 flicks,,,,,,,5.00s,
+Chargers,Classic Squiffer,ChargerQuick,300,,,,,,,,50~120,50,,38,middle,,45F(射撃6F),51,14,,full charge / tap shots,,353,214,,,"3,300","3,300",,8.4%,,,11 charges,66 tapshots,272,,0,20,,9.35s,*
+,Splat Charger,ChargerNormal,300,,,,,,,,50~150,50,,53,middle,,60F(射撃6F),66,14,,full charge / tap shots,,273,214,,,"1,500","2,200",,18.0%,,,5 charges,44 tapshots,183,,0,20,,5.50s,10
+,E-Liter 4K,ChargerLong,600,,,,,,,,50~150,50,,63,heavy,,92F(射撃6F),98,14,,full charge / tap shots,,367,214,,,"2,400","2,200",,25.0%,,,4 charges,44 tapshots,252,,0,20,,6.53s,10
+,Bamboozler 14 Mk I,ChargerLight,160,,,,,,,,60~160,60,,43,light,,20F(射撃6F),26,14,,full charge / tap shots,,369,257,,,"4,000","3,720",,4.0%,,,25 charges,62 tapshots,289,,0,20,,10.83s,*
+,Snipewriter 5H,ChargerPencil,240,,,,,,,,60~150,60,5 shots per 1 full charge,57,middle,,72F charge / 17F interval,145,14,,full charge / tap shots,,497,257,,,"3,600","2,640",,30.0%,2.3%,,3 charges,44 tapshots,362,,0,,,7.25s,
+,Gootuber,ChargerKeeper,300,,,,,,,,80~200,80,,43,middle,,75F(射撃6F),81,14,,full charge / tap shots,,222,343,,,"2,400","6,640",,12.0%,,,8 charges,83 tapshots,297,,0,20,,10.80s,*
+Sloshers,Slosher,SlosherStrong,140,140,,,,,,,,,Damage not affected by falloff,31,middle,,30F(前隙12F),29,,,,,290,,,,"2,520",,,5.5%,,,18 shots,,204,,40,,,8.70s,
+,Tri-Slosher,SlosherDiffusion,100,60,,,,,,,,,Minimum falloff dmg 67.6 (60 unmarked*) ,24,light,,24F(前隙12F),23,,,,,261,,,,"2,200",,,4.5%,,,22 shots,,184,,35,,,8.43s,
+,Sloshing Machine,SlosherLauncher,170,100,,,100,,,,,,"Minimum falloff of direct is 100 dmg, indirect not affected by falloff (always 100 dmg)",30(33),middle,,34F(前隙12F),33,,,,,309,,,,"3,060",,,5.5%,,,18 shots,,225,,42,,,9.90s,
+,Bloblobber,SlosherBathtub,240,60,,,,,,,,,"4 shots per trigger press, 240 dmg total",55,middle,,32F(前隙6F),32,,,,,450,,,,"3,840",,,6.0%,,,16 shots,,318,,40,,,8.53s,
+,Explosher,SlosherWashtub,200,,,,75,,,,,,"125 piercing dmg, 75 explosion dmg",42(47),heavy,,55F(前隙16F),55,,,,,218,,,,"2,200",,,9.0%,,,11 shots,,155,,70,,,10.08s,
+,Dread Wringer,,250,125,,,,,,,,,,32,middle,0.040 u/f,45F,45,,,,,333,,,,"2,750",,,9.0%,,,11.0 charges,,,,50,,,8.25s,
+Splatlings,Mini Splatling,SpinnerQuick,35,25,,,,,,,,,"19 shots per full charge, 665 dmg total",32,middle,,30F(20F+10F),4,,,,,525,,391,,"3,990",,,15.0%,,,6.0 charges,,298,,30,,,0.40s,
+,Heavy Splatling,SpinnerStandard,35,25,,,,,,,,,"37 shots per full charge, 1295 dmg total",45,middle,,75F(50F+25F),4,,,,,525,,355,,"5,180",,,22.5%,,,4.0 charges,,288,,40,,,0.27s,
+,Hydra Splatling,SpinnerHyper,60,25,35,25,,,,,,,"61 shots per full charge, 3660 dmg total. partial charge is 35 dmg per shot",54,heavy,,150F(120F+30F),4,,,full charge / partial,,900,525,563,,"10,980",,,35.0%,,,2.0 charges,,464,,40,,,0.13s,
+,Ballpoint Splatling,SpinnerDownpour,35,25,,,,,,,,,45 shots per full charge (10 short + 35 long range). 1575 dmg total,26→51,middle,,100F(50F+50F),3,5,,short / long range,,700,420,315,,"6,300",,,22.5%,,,4.0 charges,,396,,40,,,0.20s,
+,Nautilus 47,SpinnerSerein,35,25,,,,,,,,,"29 shots per full charge, 945 dmg total",39,middle,,76F(38F+38F),4,,,,,525,,315,,"6,615",,,14%,,,7.0 charges,,269,,40,,,0.47s,
+,Heavy Edit Splatling,,35,25,,,,,,,,,"61 shots per full charge, 2135 dmg total",34,middle,0.086 u/f,4F-3F / 76F(60F+60F),3,4,,half charge / full,,700,,,,175,,,20%,,,5 shots,,,,,,,0.25s,
+Dualies,Dapple Dualies,ManeuverShort,40,30,,,,,,,,,,20,light,,5F / roll 4F,5,4,,standing / after roll,,480,600,,,"6,000",,,0.663%,5%,,150 shots,,435,,20,,50,12.50s,*
+,Splat Dualies,ManeuverNormal,30,25,,,,,,,,,,26,middle,,5F / roll 4F,5,4,,standing / after roll,,360,450,,,"4,140",,,0.72%,6%,,138 shots,,314,,20,,70,11.50s,*
+,Glooga Dualies,ManeuverGallon,70,60,45,30,,,,,,,Weak bullets (non-rolled fire) are 45~30 dmg,31→34,middle,,9F,9,,,standing / after roll,,300,467,,,"3,195","4,970",,1.4%,8%,,71 shots,,338,,20,,70,10.65s,*
+,Dualie Squelchers,ManeuverDual,30,25,,,,,,,,,,35,middle,,6F,6,,,,,300,,,,"3,750",,,0.8%,5%,,125 shots,,237,,20,,60,12.50s,*
+,Tetra Dualies,ManeuverStepper,30,25,,,,,,,,,,29,middle,,6F / roll 5F,6,5,,standing / after roll,,300,360,,,"3,750",,,0.8%,3%,,125 shots,,271,,20,,70,12.50s,*
+,Douser Dualies FF,,40,30,,,,,,,,,,40→30,middle,0.070 u/f,8F / roll 4F,8,4,,standing / after roll,,300,600,,,"3,320",,,1.2%,10%,,83 shots,,,,,,,11.07s,
+Brellas,Splat Brella,ShelterNormal,180,30,,,,,,100,,,"11 bullets × 36 dmg per shot, max 180 dmg per enemy. ",26,middle,,29F,29,,,,,372,,,,"7,200",,,2.5%,,,40 shots,,309,,60,120,20,19.33s,
+,Tenta Brella,ShelterWide,360,45,,,,,,150,,,"13 bullets × 45 dmg per shot, max 360 dmg per enemy. 800 shield hp",33,heavy,,51F,51,,,,,424,,,,"7,200",,,5%,30%,,20 shots,,340,,70,120,30,17.00s,
+,Undercover Brella,ShelterCompact,150,25,,,,,,50,,,"7 bullets × 30 dmg per bullet, max 120 dmg per enemy",27,light,,26F,26,,,,,346,,,,"4,950",,,3%,,,33 shots,,276,,40,,30,14.30s,
+,Recycled Brella 24 Mk I,,210,30,,,,,,100,,,"6 bullets × 35 dmg per bullet, max 210 dmg per enemy",30,middle,0.058 u/f,34F,34,,,,,371,,,,"2,940",,,7.0%,15.0%,,14 shots,,,,50,55,20,7.93s,
+Stringers,Tri-Stringer,StringerNormal,450,,,,40,,,,40~150 * 3,40 × 3,"ノンチャ 40×3、1周 75×3、フルチャ 150×3。1周以降は床/壁着弾後に爆風発生
+射程：1周までは3本弱、フルチャで5.5本。1周目以降徐々に照準が集中",54(58),middle,,25F+42F(射撃20F),87,21,,2-stage charge,,310,343,,,"5,850","3,960",,7.5%,3.0%,4.0%,13 charges,33 tapshots,269,,20?,,,18.85s,12
+,REEF-LUX 450,StringerShort,210,,,,,,,,34~70 * 3,34 × 3,"ノンチャ 32×3、1周 50×3、フルチャ 70×3。チャージでの着弾時の爆風発生なし
+射程：1周目までは2本弱、フルチャで約3.3本、最初から徐々に照準が集中",36,light,,7F+22F(射撃20F),49,14,,2-stage charge,,257,411,,,"5,250","5,280",,4.0%,,,25 charges,55 tapshots,333,,20?,,,20.42s,13
+,Wellstring V,,600,,,,40,,,,50～80 × 5,50 × 5,"ノンチャ 50×5、1周 80×5、フルチャ 120×5。1周以降は床/壁着弾後に爆風発生
+射程：ノンチャ2本、1周目3本、フルチャ4.8本、1周目で照準が最も集中",48(52),heavy,,(前12F) 28F+40F (後15F),95,24,,2-stage charge,,379,240,,,"6,600","5,280",,9.0%,8.0%,7.0%,11 charges,,,,,,,17.42s,
+Splatanas,Splatana Stamper,SaberNormal,400,,145,100,,45+100,220+180,,,,"horizontal slash: 45 dmg melee + 100 dmg projectile (can multihit w/ projectile edges)
+vertical slash: 220 dmg melee + 180 dmg projectile (can multihit w/ projectile edges)",37(7) / 44(8),middle,,15F(射撃27F),42,26,,horizontal / vertical,,571,335,,,"6,400","5,800",,6.0%,2.5%,,16 vertical,40 horizontal,434,,40,,,11.20s,17
+,Splatana Wiper,SaberLite,325,,85,50,,35+50,175+150,,,,"horizontal slash: 35 dmg melee + 50 dmg projectile (can multihit w/ projectile edges)
+vertical slash: 175 dmg melee + 150 dmg projectile (can multihit w/ projectile edges)",30(6) / 37(7),light,,11F(射撃27F),38,16,,horizontal / vertical,,513,319,,,"9,100","4,250",,3.5%,2.0%,,28 vertical,50 horizontal,430,,30,,,17.73s,13
+,Mint Decavitator,,450,,180,120,,60+120,250+200,,,,"horizontal slash: 60 dmg melee + 120 dmg projectile (can multihit w/ projectile edges)
+charge slash: 250 dmg melee + 200 dmg projectile (can multihit w/ projectile edges)",32(9) / 34(12),middle,0.055 u/f,タメ15F(射撃37F),52,30,,uncharged / charged,,519,170,,,"3,150",,,13.00%,6.50%,,7 vertical,,,,,,,6.07s,
+Grizzco,Grizzco Blaster,BlasterBear,50,,,,35,,,,,,Ground blast does 35 dmg (same as indirect),16(23),middle,,9F,9,,,direct / indirect,,333,233,,,"2,100",,,2.33%,,,42 shots,,224,,5,,,6.30s,
+,Grizzco Brella,ShelterBear,80,15,,,,,,,,,"10 bullets * 15 dmg per shot, max 80 dmg per enemy",26,middle,,12F,12,,,,,400,,,,"4,000",,,2.0%,,,50 shots,,300,,20,,,10.00s,
+,Grizzco Charger,ChargerBear,200,,,,,,,,,,,62,middle,,10F,10,,,,,"1,200",,,,"1,400",,,13.0%,,,7 charges,,359,,0,,,1.17s,
+,Grizzco Slosher,SlosherBear,360,,,,150,,,,,,,46,middle,,45F(前隙30F),45,,,,,480,,,,"1,440",,,25.0%,,,4 shots,,196,,80,,,3.00s,
+,Grizzco Stringer,StringerBear,1350,,,,40,,,,35~150 * 9,35 × 9,"ノンチャ 35×9、1周 72×9、フルチャ 150×9。1周以降は床/壁着弾後に爆風発生
+射程：1周までは3本弱、フルチャで5.5本。1周目以降徐々に照準が集中",54(58),middle,,24F+32F(射撃20F),76,22,,full charge / tap shots,,"1,066",859,,,"5,400","3,465",,24.0%,,,4 charges,11 tapshots,652,,20,,,5.07s,
+,Grizzco Splatana,SaberBear,1200,,,,,200,1200,,,,,11 / 31,middle,,67F(射撃71F),138,30,,melee / ranged,,522,400,,,"7,200","39,600",,15.0%,3.0%,,6 vertical,33 horizontal,384,352,135,60,,13.80s,
+,Grizzco Dualies,,35,25,,,125,,,,,,125〜40 blast damage on slide,13→22,middle,,5F スライド後4F,5,4,,standing / after roll,,420,525,,,"7,000","1,750",,0.5%,7%,,200 shots,14 slides,,,,,,16.67s,
+,Grizzco Roller,,600,400,150,50,,150,600,400,,,,8-13 / 24-60,heavy,,横33F 縦102F,33,102,,horizontal / vertical,,273,353,,,"12,000","4,800",,5%,20%,,20 hflicks,5 vflicks,,,,,,11.00s,
