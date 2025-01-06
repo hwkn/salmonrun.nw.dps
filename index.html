@@ -160,7 +160,7 @@ body {
         type: "GET",
         url: "https://github.com/hwkn/salmonrun.nw.dps/blob/main/Assets/test_data_unformatted.csv",
         success: function (data) {
-            $('body').append(arrayToTable(Papa.parse(data).data));
+            $('main').append(arrayToTable(Papa.parse(data).data));
         }
     });
 </script>
