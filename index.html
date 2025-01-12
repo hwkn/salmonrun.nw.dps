@@ -144,6 +144,84 @@ body {
     <p>Some text..</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
+  <div>
+    <p> *** OTHER STUFF HERE ***<p/>
+    <table id="weapon_table">
+        <colgroup>
+            <col class="twenty" />
+            <col class="fourty" />
+            <col class="thirtyfive" />
+            <col class="twentyfive" />
+            <col class="twenty" />
+            <col class="fourty" />
+            <col class="thirtyfive" />
+            <col class="twentyfive" />
+            <col class="twenty" />
+            <col class="fourty" />
+            <col class="thirtyfive" />
+            <col class="twentyfive" />
+            <col class="twenty" />
+            <col class="fourty" />
+            <col class="thirtyfive" />
+        </colgroup>
+        <tr>
+            <th onclick="sortTable(0)"><span class="glyphicon glyphicon-sort"></span>&nbsp&nbspweapon</th>
+            <th onclick="sortTable(1)"><span class="glyphicon glyphicon-sort"></span>&nbsp&nbspdmgPrimary</th>
+            <th onclick="sortTable(2)"><span class="glyphicon glyphicon-sort"></span>&nbsp&nbspdps</th>
+            <th onclick="sortTable(3)"><span class="glyphicon glyphicon-sort"></span>&nbsp&nbspDATE</th>
+        </tr>
+    </table>
+</div>
+<script>
+    //first add an event listener for page load
+    document.addEventListener( "DOMContentLoaded", get_json_data, false ); // get_json_data is the function name that will fire on page load
+
+    //this function is in the event listener and will execute on page load
+    function get_json_data(){
+        // Relative URL of external json file
+        var json_url = 'Assets/weapon_data.json';
+
+        //Build the XMLHttpRequest (aka AJAX Request)
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() { 
+            if (this.readyState == 4 && this.status == 200) {//when a good response is given do this
+
+                var data = JSON.parse(this.responseText); // convert the response to a json object
+                append_json(data);// pass the json object to the append_json function
+            }
+        }
+        //set the request destination and type
+        xmlhttp.open("POST", json_url, true);
+        //set required headers for the request
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        // send the request
+        xmlhttp.send(); // when the request completes it will execute the code in onreadystatechange section
+    }
+
+    //this function appends the json data to the table 'weapon_table'
+    function append_json(data){
+        var table = document.getElementById('weapon_table');
+        data.forEach(function(object) {
+            var tr = document.createElement('tr');
+            tr.innerHTML = '<td>' + object.weapon + '</td>' +
+            '<td>' + object.dmgPrimary + '</td>' +
+            '<td>' + object.falloffMin + '</td>' +
+            '<td>' + object.range + '</td>' +
+            '<td>' + object.weight + '</td>' +
+            '<td>' + object.speedWhileFiring + '</td>' +
+            '<td>' + object.shotIntervalFrameData + '</td>' +
+            '<td>' + object.intervalDpsCalculation + '</td>' +
+            '<td>' + object.dps + '</td>' +
+            '<td>' + object.totalDamage + '</td>' +
+            '<td>' + object.inkConsumption + '</td>' +
+            '<td>' + object.shotsPerInktank + '</td>' +
+            '<td>' + object.continuousDps + '</td>' +
+            '<td>' + object.irFrames + '</td>' +
+            '<td>' + object.timeTankLasts + '</td>';
+            table.appendChild(tr);
+        });
+    }
+</script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
   <script>
