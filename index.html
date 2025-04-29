@@ -204,7 +204,7 @@ $.getJSON(link, vers => {
 
 <script>
 $(document).ready(function() {
-  $.getJSON( link, function( data ) {
+  $.getJSON( "https://github.com/hwkn/salmonrun.nw.dps/blob/main/Assets/test.json", function( data ) {
     var items = [];
     $.each( data, function( key, val ) {
       items.push( "<li id='" + key + "'>" + val + "</li>" );
