@@ -150,31 +150,34 @@ body {
              <td id="latitude"></td>
          </tr>
          <tr>
-             <td>Latitude:</td>
+             <td>Longitude:</td>
              <td id="longitude"></td>
          </tr>
      </table>
  </div>
  <script>
  // The Google Geocoding API url used to get the JSON data
- var geocodingAPI = "http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true";
+ //var geocodingAPI = "http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true";
+ var geocodingAPI = "https://github.com/hwkn/salmonrun.nw.dps/Assets/test.json";
 
  $.getJSON(geocodingAPI, function (json) {
+   $.each(result, function(i, field){
+        $("div2").append(field + " ");
 
      // Set the variables from the results array
-     var address = json.results[0].formatted_address;
-     console.log('Address : ', address);
+     //var address = json.results[0].formatted_address;
+     //console.log('Address : ', address);
 
-     var latitude = json.results[0].geometry.location.lat;
-     console.log('Latitude : ', latitude);
+     //var latitude = json.results[0].geometry.location.lat;
+     //console.log('Latitude : ', latitude);
 
-     var longitude = json.results[0].geometry.location.lng;
-     console.log('Longitude : ', longitude);
+     //var longitude = json.results[0].geometry.location.lng;
+     //console.log('Longitude : ', longitude);
 
      // Set the table td text
-     $('#address').text(address);
-     $('#latitude').text(latitude);
-     $('#longitude').text(longitude);
+     //$('#address').text(address);
+     //$('#latitude').text(latitude);
+     //$('#longitude').text(longitude);
  });
 
  // Caching the link jquery object
@@ -189,6 +192,8 @@ body {
      window.open(this.href, '_blank');
  });
  </script>
+
+ <div2></div2>
 
 
   <div class="main">
