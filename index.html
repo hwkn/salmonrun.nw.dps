@@ -12,6 +12,8 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"
 ></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="/json.js"></script>
 <script defer src="js/dist/json-formatter.umd.js" charset="UTF-8"></script>
 <title>SRNW DPS</title>
 <meta charset="UTF-8">
@@ -142,35 +144,20 @@ body {
     <div class="fakeimg" style="height:60px;">Image</div>
   </div>
   -->
-<div id="body">
+<div id="text"></div>
 
-<h1>Parse JSON data using jQuery.getJSON()</h1>
-
-     <hr/>
-     <table border="1">
-         <tr>
-             <td>Url:</td>
-             <td><a class="myLink">The Google Geocoding API</a>
-             </td>
-         </tr>
-         <tr>
-             <td>Address:</td>
-             <td id="address"></td>
-         </tr>
-         <tr>
-             <td>Latitude:</td>
-             <td id="latitude"></td>
-         </tr>
-         <tr>
-             <td>Longitude:</td>
-             <td id="longitude"></td>
-         </tr>
-     </table>
-</div>
-
-<div id="div3">div3</div>
+<script>
+$().ready(function(){
+    $.getJSON( "https://github.com/hwkn/salmonrun.nw.dps/blob/main/Assets/test.json", function( data ) {
+    console.log(data);
+    $("#text").html(data["text"]);
+  });
+});
+</script>
 
 <!--
+<h1>Parse JSON data using jQuery.getJSON()</h1>
+
 <script>
 // The Google Geocoding API url used to get the JSON data
 //var geocodingAPI = "http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true";
@@ -200,6 +187,8 @@ $.getJSON(link, vers => {
 </script>
 -->
 
+
+<!--
 <div id="div2">div2</div>
 
 <script>
@@ -224,23 +213,10 @@ $(document).ready(function() {
 </script>
 
  <div id="div4">div4</div>
+-->
 
-
+<!--
   <div class="main">
-    <!--
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p id="test"></p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    -->
     <h2> *** OTHER STUFF HERE ***<p/>
     <table id="weapon_table">
         <colgroup>
@@ -355,6 +331,7 @@ $(document).ready(function() {
   <iframe src="https://script.google.com/macros/s/AKfycbwEhKPVGhUt5WG5ElohHvu52Agt_iKixg4EGNwBBmN4Kjo2XTI8jzfutlRV9HWt-YaXOQ/exec"
   height="500" width="100%"></iframe>
 </div>
+-->
 
 </body>
 </html>
