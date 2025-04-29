@@ -155,12 +155,15 @@ body {
          </tr>
      </table>
  </div>
+
+ <div3 id="div3"></div3>
+
  <script>
  // The Google Geocoding API url used to get the JSON data
  //var geocodingAPI = "http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true";
- var geocodingAPI = "https://github.com/hwkn/salmonrun.nw.dps/Assets/test.json";
+ var link = "https://github.com/hwkn/salmonrun.nw.dps/Assets/test.json";
 
- $.getJSON( "content.json", function( data ) {
+ $.getJSON(link, function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );
@@ -169,32 +172,19 @@ body {
   $( "<ul/>", {
     "class": "my-new-list",
     html: items.join( "" )
-  }).appendTo( "body" );
-
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
   }).appendTo( "div2" );
 });
 
-     // Set the variables from the results array
-     //var address = json.results[0].formatted_address;
-     //console.log('Address : ', address);
-
-     //var latitude = json.results[0].geometry.location.lat;
-     //console.log('Latitude : ', latitude);
-
-     //var longitude = json.results[0].geometry.location.lng;
-     //console.log('Longitude : ', longitude);
-
-     // Set the table td text
-     //$('#address').text(address);
-     //$('#latitude').text(latitude);
-     //$('#longitude').text(longitude);
-
+$.getJSON(link, vers => {
+                    let last = 0
+                    vers.forEach(ver => {
+                        $("#div3").append(new Option(ver[0] + "." + ver[1] + "." + ver[2], ver))
+                        last = ver
+                    })
+                })
  </script>
 
- <div2></div2>
+ <div2 id="div2"></div2>
 
 
   <div class="main">
