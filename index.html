@@ -144,7 +144,7 @@ body {
   -->
 <div id="body">
 
- <h1>Parse JSON data using jQuery.getJSON()</h1>
+<h1>Parse JSON data using jQuery.getJSON()</h1>
 
      <hr/>
      <table border="1">
@@ -166,16 +166,17 @@ body {
              <td id="longitude"></td>
          </tr>
      </table>
- </div>
+</div>
 
- <div id="div3">div3</div>
+<div id="div3">div3</div>
 
- <script>
- // The Google Geocoding API url used to get the JSON data
- //var geocodingAPI = "http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true";
- var link = "https://github.com/hwkn/salmonrun.nw.dps/blob/main/Assets/test.json";
+<script>
+// The Google Geocoding API url used to get the JSON data
+//var geocodingAPI = "http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true";
+var link = "https://github.com/hwkn/salmonrun.nw.dps/blob/main/Assets/test.json";
 
- $.getJSON(link, function( data ) {
+$(document).ready(function() {
+  $.getJSON(link, function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );
@@ -194,6 +195,7 @@ $.getJSON(link, vers => {
                         last = ver
                     })
                 })
+}
  </script>
 
  <div id="div2">div2</div>
