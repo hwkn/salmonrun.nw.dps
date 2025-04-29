@@ -170,6 +170,7 @@ body {
 
 <div id="div3">div3</div>
 
+<!--
 <script>
 // The Google Geocoding API url used to get the JSON data
 //var geocodingAPI = "http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true";
@@ -195,22 +196,30 @@ $.getJSON(link, vers => {
                         last = ver
                     })
                 })
-}
- </script>
+});
+</script>
+-->
 
- <div id="div2">div2</div>
+<div id="div2">div2</div>
 
- <script>
- $.getJSON( link, function( data ) {
-  var items = [];
-  $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val + "</li>" );
+<script>
+$(document).ready(function() {
+  $.getJSON( link, function( data ) {
+    var items = [];
+    $.each( data, function( key, val ) {
+      items.push( "<li id='" + key + "'>" + val + "</li>" );
+    });
+
+    $( "<ul/>", {
+      "class": "my-new-list",
+      html: items.join( "" )
+    }).appendTo( "div4" );
+
+    $( "<ul/>", {
+      "class": "my-new-list",
+      html: items.join( "" )
+    }).appendTo( "body" );
   });
-
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
-  }).appendTo( "div4" );
 });
 </script>
 
