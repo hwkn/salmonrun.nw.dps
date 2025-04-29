@@ -130,6 +130,67 @@ body {
     <div class="fakeimg" style="height:60px;">Image</div>
   </div>
   -->
+<div id="body">
+
+ <h1>Parse JSON data using jQuery.getJSON()</h1>
+
+     <hr/>
+     <table border="1">
+         <tr>
+             <td>Url:</td>
+             <td><a class="myLink">The Google Geocoding API</a>
+             </td>
+         </tr>
+         <tr>
+             <td>Address:</td>
+             <td id="address"></td>
+         </tr>
+         <tr>
+             <td>Latitude:</td>
+             <td id="latitude"></td>
+         </tr>
+         <tr>
+             <td>Latitude:</td>
+             <td id="longitude"></td>
+         </tr>
+     </table>
+ </div>
+ <script>
+ // The Google Geocoding API url used to get the JSON data
+ var geocodingAPI = "http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true";
+
+ $.getJSON(geocodingAPI, function (json) {
+
+     // Set the variables from the results array
+     var address = json.results[0].formatted_address;
+     console.log('Address : ', address);
+
+     var latitude = json.results[0].geometry.location.lat;
+     console.log('Latitude : ', latitude);
+
+     var longitude = json.results[0].geometry.location.lng;
+     console.log('Longitude : ', longitude);
+
+     // Set the table td text
+     $('#address').text(address);
+     $('#latitude').text(latitude);
+     $('#longitude').text(longitude);
+ });
+
+ // Caching the link jquery object
+ var $myLink = $('a.myLink');
+
+ // Set the links properties
+ $myLink.prop({
+     href: geocodingAPI,
+     title: 'Click on this link to open in a new window.'
+ }).click(function (e) {
+     e.preventDefault();
+     window.open(this.href, '_blank');
+ });
+ </script>
+
+
   <div class="main">
     <!--
     <h2>TITLE HEADING</h2>
