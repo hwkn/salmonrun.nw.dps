@@ -55,7 +55,7 @@ body {
 }
 
 /* Column container */
-.row {  
+.row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -69,7 +69,7 @@ body {
 }
 
 /* Main column */
-.main {   
+.main {
   flex: 70%;
   background-color: white;
   padding: 20px;
@@ -84,7 +84,7 @@ body {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row {   
+  .row {
     flex-direction: column;
   }
 }
@@ -176,14 +176,23 @@ body {
     //first add an event listener for page load
     document.addEventListener( "DOMContentLoaded", get_json_data, false ); // get_json_data is the function name that will fire on page load
 
+    //function get_parameter(SpecActor) {
+    //            $.getJSON(
+    //                prefix + "data/parameter/" + version + "/weapon/" + SpecActor + ".game__GameParameterTable.json",
+    //                data => {
+    // prefix = https://leanny.github.io/splat3/
+    // https://hwkn.github.io/salmonrun.nw.dps/
+
+    prefix = "https://github.com/hwkn/salmonrun.nw.dps/"
+
     //this function is in the event listener and will execute on page load
     function get_json_data(){
         // Relative URL of external json file
-        var json_url = 'Assets/weapon_data.json';
+        var json_url = prefix + "Assets/weapon_data.json";
 
         //Build the XMLHttpRequest (aka AJAX Request)
         xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() { 
+        xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {//when a good response is given do this
 
                 var data = JSON.parse(this.responseText); // convert the response to a json object
@@ -246,7 +255,7 @@ body {
     });
     document.getElementById("test").innerHTML = arrayToTable(Papa.parse(data).data);
   </script>
-  <iframe src="https://script.google.com/macros/s/AKfycbwEhKPVGhUt5WG5ElohHvu52Agt_iKixg4EGNwBBmN4Kjo2XTI8jzfutlRV9HWt-YaXOQ/exec" 
+  <iframe src="https://script.google.com/macros/s/AKfycbwEhKPVGhUt5WG5ElohHvu52Agt_iKixg4EGNwBBmN4Kjo2XTI8jzfutlRV9HWt-YaXOQ/exec"
   height="500" width="100%"></iframe>
 </div>
 
