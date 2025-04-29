@@ -156,7 +156,7 @@ body {
      </table>
  </div>
 
- <div3 id="div3"></div3>
+ <div id="div3">div3</div>
 
  <script>
  // The Google Geocoding API url used to get the JSON data
@@ -184,7 +184,23 @@ $.getJSON(link, vers => {
                 })
  </script>
 
- <div2 id="div2"></div2>
+ <div id="div2">div2</div>
+
+ <script>
+ $.getJSON( link, function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "div4" );
+});
+</script>
+
+ <div id="div4">div4</div>
 
 
   <div class="main">
